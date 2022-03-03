@@ -1,0 +1,29 @@
+.board {
+    width: 75vh;
+    height: 75vh;
+}
+
+@media (min-width: 576px) {  }
+
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+.board {
+    width:45vh;
+    height: 45vh;
+}
+.playerInfo{
+    width:45vh;
+    height: 45vh;
+
+}
+
+
+
+@media (min-width: 1200px) {  }
+
+
+@media (min-width: 1400px) {  }

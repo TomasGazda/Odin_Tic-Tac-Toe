@@ -1,29 +1,102 @@
 .board {
     width: 75vh;
     height: 75vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    background-color: #34495e;
+    border: 6px solid #2c3e50;
+    border-radius: 10px;
+}
+.cell{
+    border: 6px solid #2c3e50;
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
-@media (min-width: 576px) {  }
+.dis{pointer-events:none}
 
-
-@media (min-width: 768px) {  }
-
-
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-.board {
-    width:45vh;
-    height: 45vh;
-}
-.playerInfo{
-    width:45vh;
-    height: 45vh;
+.winnerimg{
+    width: min(40vh,40vw);
+        height: min(40vh,40vw);
 
 }
+.winning{
+    font-weight: bold;
+    font-size: 6em;
+}
+.losing{
+    color: rgba(214, 205, 205, 0.432);
+}
+
+@media (max-width: 320.93px) {
+    .board {
+        width: min(50vh,50vw);
+        height: min(50vh,50vw);
+    }
+    .playerInfo{
+        width:min(20vh,20vw);
+        height: min(20vh,20vw);
+
+    
+    }
+
+    .player_img{
+        width: min(25vh,25vw);
+        height: min(25vh,25vw);
+    }
+    .cell{
+        font-size: 16px;
+    }
+
+}
+@media (min-width: 321px) and (max-width: 767.98px) {
+    .board {
+        width: min(50vh,50vw);
+        height: min(50vh,50vw);
+    }
+    .playerInfo{
+        width:min(20vh,20vw);
+        height: min(20vh,20vw);
+
+    
+    }
+
+    .player_img{
+        width: min(25vh,25vw);
+        height: min(25vh,25vw);
+    }
+    .cell{
+        font-size: 2em;
+    }
+  }
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .player_img{
+        width: min(25vh,25vw);
+        height: min(25vh,25vw);
+    }
+    .board {
+        width: min(45vh,45vw);
+        height: min(45vh,45vw);
+    }
+    .playerInfo{
+        width:min(45vh,45vw);
+        height: min(45vh,45vw);
+    
+    }
+    .cell{
+        font-size: 3em;
+    }
+  }
 
 
 
-@media (min-width: 1200px) {  }
-
-
-@media (min-width: 1400px) {  }
